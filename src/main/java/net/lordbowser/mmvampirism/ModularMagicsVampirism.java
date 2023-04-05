@@ -1,6 +1,9 @@
 package net.lordbowser.mmvampirism;
 
 import com.mojang.logging.LogUtils;
+import net.lordbowser.mmvampirism.item.ModCreativeModeTabs;
+import net.lordbowser.mmvampirism.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -12,7 +15,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(ModularMagicsVampirism.MOD_ID)
 public class ModularMagicsVampirism
 {
@@ -21,7 +23,11 @@ public class ModularMagicsVampirism
 
     public ModularMagicsVampirism() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
@@ -31,7 +37,10 @@ public class ModularMagicsVampirism
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
-
+        if(event.getTab() == ModCreativeModeTabs.VAMPIRISM_TAB) {
+            event.accept(ModItems.BLACK_OPAL);
+            event.accept(ModItems.RAW_BLACK_OPAL);
+        }
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
