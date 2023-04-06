@@ -11,9 +11,21 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ModularMagicsVampirism.MOD_ID);
 
-    public static final RegistryObject<Item> BLACK_OPAL = ITEMS.register("black_opal",
+    public static final RegistryObject<Item> CRUCIFIX = ITEMS.register("crucifix",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> RAW_BLACK_OPAL = ITEMS.register("raw_black_opal",
+    public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRE_FANGS = ITEMS.register("vampire_fangs",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOOD_BOTTLE = ITEMS.register("blood_bottle",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

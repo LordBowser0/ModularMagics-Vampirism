@@ -3,7 +3,6 @@ package net.lordbowser.mmvampirism;
 import com.mojang.logging.LogUtils;
 import net.lordbowser.mmvampirism.item.ModCreativeModeTabs;
 import net.lordbowser.mmvampirism.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -38,8 +37,12 @@ public class ModularMagicsVampirism
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == ModCreativeModeTabs.VAMPIRISM_TAB) {
-            event.accept(ModItems.BLACK_OPAL);
-            event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModItems.CRUCIFIX);
+            event.accept(ModItems.SILVER_INGOT);
+            event.accept(ModItems.RAW_SILVER);
+            event.accept(ModItems.BLOOD_BOTTLE);
+            event.accept(ModItems.VAMPIRE_FANGS);
+            event.accept(ModItems.GARLIC);
         }
     }
 

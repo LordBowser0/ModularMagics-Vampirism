@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
         VAMPIRISM_TAB = event.registerCreativeModeTab(new ResourceLocation(ModularMagicsVampirism.MOD_ID, "vampirism_tab"),
-        builder -> builder.icon(() -> new ItemStack(ModItems.BLACK_OPAL.get()))
+        builder -> builder.icon(() -> new ItemStack(ModItems.CRUCIFIX.get()))
                 .title(Component.translatable("creativemodetab.vampirism_tab")));
     }
 }

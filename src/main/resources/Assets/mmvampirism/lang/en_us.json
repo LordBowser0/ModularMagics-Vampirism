@@ -1,5 +1,9 @@
 {
-  "item.mmvampirism.black_opal": "Black Opal",
-  "item.mmvampirism.raw_black_opal": "Raw Black Opal",
+  "item.mmvampirism.crucifix": "Crucifix",
+  "item.mmvampirism.silver_ingot": "Silver Ingot",
+  "item.mmvampirism.raw_silver": "Raw Silver",
+  "item.mmvampirism.vampire_fangs": "Vampire Fangs",
+  "item.mmvampirism.blood_bottle": "Bottle of Blood",
+  "item.mmvampirism.garlic": "Garlic",
   "creativemodetab.vampirism_tab": "MM: Vampirism"
 }

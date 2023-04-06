@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mmvampirism:item/black_opal"
+    "layer0": "mmvampirism:item/crucifix"
   }
 }
