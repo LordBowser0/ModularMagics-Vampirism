@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "mmvampirism:vampire_castle_bricks",
+    "mmvampirism:cracked_vampire_castle_bricks",
+    "mmvampirism:mossy_vampire_castle_bricks",
+    "mmvampirism:bloody_vampire_castle_bricks",
+    "mmvampirism:chiseled_vampire_castle_bricks",
+    "mmvampirism:silver_block",
+    "mmvampirism:silver_ore",
+    "mmvampirism:deepslate_silver_ore",
+    "mmvampirism:raw_silver_block"
+  ]
+}

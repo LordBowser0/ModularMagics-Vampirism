@@ -21,25 +21,28 @@ public class ModBlocks {
     //Standard-Cube Blocks
     public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("silver_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> RAW_SILVER_BLOCK = registerBlock("raw_silver_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> SILVER_DEEPSLATE_ORE = registerBlock("silver_deepslate_ore",
+    public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> VAMPIRE_CASTLE_BRICKS = registerBlock("vampire_castle_bricks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRACKED_VAMPIRE_CASTLE_BRICKS = registerBlock("cracked_vampire_castle_bricks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_VAMPIRE_CASTLE_BRICKS = registerBlock("mossy_vampire_castle_bricks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> BLOODY_VAMPIRE_CASTLE_BRICKS = registerBlock("bloody_vampire_castle_bricks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CHISELED_VAMPIRE_CASTLE_BRICKS = registerBlock("chiseled_vampire_castle_bricks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()));
 
     //Non-Standard-Cube Blocks
 
     /**
-     *  Coffin --Different Woods
+     *  Coffin --> Different Woods (and Stone?)
+     *  Special "Vampire Coffin"
      *  Standing Mirror
      *  Wall Mirror
      *  Splattered Blood

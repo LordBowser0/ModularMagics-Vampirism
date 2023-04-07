@@ -56,12 +56,12 @@ public class ModularMagicsVampirism
             event.accept(ModItems.CRUCIFIX);
             event.accept(ModItems.WOODEN_STAKE);
             event.accept(ModItems.HAND_MIRROR);
-            event.accept(ModItems.ROSEMARY);
             event.accept(ModItems.SYRINGE);
             event.accept(ModItems.CROSSBOW);
             event.accept(ModItems.CROSSBOW_BOLT);
             //Armor & Equipment
             event.accept(ModItems.TOP_HAT);
+            event.accept(ModItems.ROSEMARY);
             event.accept(ModItems.SILVER_HELMET);
             event.accept(ModItems.SILVER_CHESTPLATE);
             event.accept(ModItems.SILVER_LEGGINGS);
@@ -70,9 +70,10 @@ public class ModularMagicsVampirism
             //Blocks
             //Natural Blocks
             event.accept(ModBlocks.SILVER_ORE);
-            event.accept(ModBlocks.SILVER_DEEPSLATE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_SILVER_ORE);
             //Building Blocks
             event.accept(ModBlocks.SILVER_BLOCK);
+            event.accept(ModBlocks.RAW_SILVER_BLOCK);
             event.accept(ModBlocks.VAMPIRE_CASTLE_BRICKS);
             event.accept(ModBlocks.BLOODY_VAMPIRE_CASTLE_BRICKS);
             event.accept(ModBlocks.CRACKED_VAMPIRE_CASTLE_BRICKS);

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "mmvampirism:silver_helmet"
+    },
+    {
+      "item": "mmvampirism:silver_chestplate"
+    },
+    {
+      "item": "mmvampirism:silver_leggings"
+    },
+    {
+      "item": "mmvampirism:silver_boots"
+    }
+  ],
+  "result": "mmvampirism:silver_nugget"
+}
