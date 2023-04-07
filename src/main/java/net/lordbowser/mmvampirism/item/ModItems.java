@@ -51,6 +51,16 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CROSSBOW_BOLT = ITEMS.register("crossbow_bolt",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_AXE = ITEMS.register("silver_axe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_PICKAXE = ITEMS.register("silver_pickaxe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_HOE = ITEMS.register("silver_hoe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_SHOVEL = ITEMS.register("silver_shovel",
+            () -> new Item(new Item.Properties()));
 
     //Armor
     public static final RegistryObject<Item> TOP_HAT = ITEMS.register("top_hat",

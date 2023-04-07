@@ -59,6 +59,11 @@ public class ModularMagicsVampirism
             event.accept(ModItems.SYRINGE);
             event.accept(ModItems.CROSSBOW);
             event.accept(ModItems.CROSSBOW_BOLT);
+            event.accept(ModItems.SILVER_AXE);
+            event.accept(ModItems.SILVER_SWORD);
+            event.accept(ModItems.SILVER_SHOVEL);
+            event.accept(ModItems.SILVER_PICKAXE);
+            event.accept(ModItems.SILVER_HOE);
             //Armor & Equipment
             event.accept(ModItems.TOP_HAT);
             event.accept(ModItems.ROSEMARY);

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mmvampirism:item/wip"
+    "layer0": "mmvampirism:item/vampiric_blood_bottle"
   }
 }
