@@ -43,6 +43,7 @@ authors="Lord_Bowser" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 Part of the (currently only planned) set Modular Magics.
+Vaguely inspired by TESV:Skyrim and Witchery Mod for 1.7.10
 Add features here when implemented.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
