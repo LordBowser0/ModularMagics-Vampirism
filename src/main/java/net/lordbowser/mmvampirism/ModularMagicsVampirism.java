@@ -1,6 +1,7 @@
 package net.lordbowser.mmvampirism;
 
 import com.mojang.logging.LogUtils;
+import net.lordbowser.mmvampirism.block.ModBlocks;
 import net.lordbowser.mmvampirism.item.ModCreativeModeTabs;
 import net.lordbowser.mmvampirism.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,6 +25,7 @@ public class ModularMagicsVampirism
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -39,6 +41,7 @@ public class ModularMagicsVampirism
         if(event.getTab() == ModCreativeModeTabs.VAMPIRISM_TAB) {
             event.accept(ModItems.CRUCIFIX);
             event.accept(ModItems.SILVER_INGOT);
+            event.accept(ModBlocks.SILVER_BLOCK);
             event.accept(ModItems.RAW_SILVER);
             event.accept(ModItems.BLOOD_BOTTLE);
             event.accept(ModItems.VAMPIRE_FANGS);
