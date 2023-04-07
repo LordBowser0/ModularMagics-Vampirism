@@ -39,13 +39,45 @@ public class ModularMagicsVampirism
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == ModCreativeModeTabs.VAMPIRISM_TAB) {
-            event.accept(ModItems.CRUCIFIX);
-            event.accept(ModItems.SILVER_INGOT);
-            event.accept(ModBlocks.SILVER_BLOCK);
+            //Items
+            //Ingredients & Resources
             event.accept(ModItems.RAW_SILVER);
-            event.accept(ModItems.BLOOD_BOTTLE);
+            event.accept(ModItems.SILVER_NUGGET);
+            event.accept(ModItems.SILVER_INGOT);
             event.accept(ModItems.VAMPIRE_FANGS);
+            event.accept(ModItems.CLEAN_VAMPIRE_FANGS);
+            event.accept(ModItems.CLOTH);
+            event.accept(ModItems.BLOOD_BOTTLE);
+            event.accept(ModItems.VAMPIRIC_BLOOD_BOTTLE);
+            event.accept(ModItems.HOLY_WATER);
+            event.accept(ModItems.CHALICE);
             event.accept(ModItems.GARLIC);
+            //Tools & Weapons
+            event.accept(ModItems.CRUCIFIX);
+            event.accept(ModItems.WOODEN_STAKE);
+            event.accept(ModItems.HAND_MIRROR);
+            event.accept(ModItems.ROSEMARY);
+            event.accept(ModItems.SYRINGE);
+            event.accept(ModItems.CROSSBOW);
+            event.accept(ModItems.CROSSBOW_BOLT);
+            //Armor & Equipment
+            event.accept(ModItems.TOP_HAT);
+            event.accept(ModItems.SILVER_HELMET);
+            event.accept(ModItems.SILVER_CHESTPLATE);
+            event.accept(ModItems.SILVER_LEGGINGS);
+            event.accept(ModItems.SILVER_BOOTS);
+
+            //Blocks
+            //Natural Blocks
+            event.accept(ModBlocks.SILVER_ORE);
+            event.accept(ModBlocks.SILVER_DEEPSLATE_ORE);
+            //Building Blocks
+            event.accept(ModBlocks.SILVER_BLOCK);
+            event.accept(ModBlocks.VAMPIRE_CASTLE_BRICKS);
+            event.accept(ModBlocks.BLOODY_VAMPIRE_CASTLE_BRICKS);
+            event.accept(ModBlocks.CRACKED_VAMPIRE_CASTLE_BRICKS);
+            event.accept(ModBlocks.MOSSY_VAMPIRE_CASTLE_BRICKS);
+            event.accept(ModBlocks.CHISELED_VAMPIRE_CASTLE_BRICKS);
         }
     }
 

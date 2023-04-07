@@ -26,13 +26,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> SILVER_DEEPSLATE_ORE = registerBlock("silver_deepslate_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> VAMPIRE_CASTLE_BRICKS = registerBlock("vampire_castle_bricks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRACKED_VAMPIRE_CASTLE_BRICKS = registerBlock("cracked_vampire_castle_bricks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_VAMPIRE_CASTLE_BRICKS = registerBlock("mossy_vampire_castle_bricks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> BLOODY_VAMPIRE_CASTLE_BRICKS = registerBlock("bloody_vampire_castle_bricks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHISELED_VAMPIRE_CASTLE_BRICKS = registerBlock("chiseled_vampire_castle_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
 
     //Non-Standard-Cube Blocks
 
