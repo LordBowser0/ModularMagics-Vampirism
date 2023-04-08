@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mmvampirism:block/cracked_vampire_castle_bricks"
+  }
+}
