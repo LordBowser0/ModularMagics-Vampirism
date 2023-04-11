@@ -24,12 +24,39 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
+        //Silver
         oreBlasting(consumer, List.of(ModItems.RAW_SILVER.get()), RecipeCategory.MISC,
-                ModItems.SILVER_INGOT.get(), 0.7f, 100, "silver_ingot");
+                ModItems.SILVER_INGOT.get(), 0.9f, 100, "silver_ingot");
         oreSmelting(consumer, List.of(ModItems.RAW_SILVER.get()), RecipeCategory.MISC,
-                ModItems.SILVER_INGOT.get(), 0.7f, 200, "silver_ingot");
+                ModItems.SILVER_INGOT.get(), 0.9f, 200, "silver_ingot");
+        oreBlasting(consumer, List.of(ModBlocks.SILVER_ORE.get()), RecipeCategory.MISC,
+                ModItems.SILVER_INGOT.get(), 0.9f, 100, "silver_ingot");
+        oreSmelting(consumer, List.of(ModBlocks.SILVER_ORE.get()), RecipeCategory.MISC,
+                ModItems.SILVER_INGOT.get(), 0.9f, 200, "silver_ingot");
+        oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_SILVER_ORE.get()), RecipeCategory.MISC,
+                ModItems.SILVER_INGOT.get(), 0.9f, 100, "silver_ingot");
+        oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_SILVER_ORE.get()), RecipeCategory.MISC,
+                ModItems.SILVER_INGOT.get(), 0.9f, 200, "silver_ingot");
         nineBlockStorageRecipes(consumer, RecipeCategory.MISC, ModItems.SILVER_INGOT.get(),
                 RecipeCategory.MISC, ModBlocks.SILVER_BLOCK.get());
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_NUGGET.get(), 9)
+                .requires(ModItems.SILVER_INGOT.get()).group("silver_nugget")
+                .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "silver_nugget"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_INGOT.get())
+                .define('X', ModItems.SILVER_NUGGET.get()).group("silver_ingot")
+                .pattern("XXX").pattern("XXX").pattern("XXX")
+                .unlockedBy(getHasName(ModItems.SILVER_NUGGET.get()), has(ModItems.SILVER_NUGGET.get()))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "silver_ingot_from_nuggets"));
+        List nuggetList = List.of(ModItems.SILVER_BOOTS.get(), ModItems.SILVER_LEGGINGS.get(),
+                ModItems.SILVER_CHESTPLATE.get(), ModItems.SILVER_HELMET.get(), ModItems.SILVER_AXE.get(),
+                ModItems.SILVER_HOE.get(), ModItems.SILVER_SHOVEL.get(), ModItems.SILVER_PICKAXE.get(),
+                ModItems.SILVER_SWORD.get());
+        oreBlasting(consumer, nuggetList, RecipeCategory.MISC,
+                ModItems.SILVER_NUGGET.get(), 0.1f, 100, "silver_nugget");
+        oreSmelting(consumer, nuggetList, RecipeCategory.MISC,
+                ModItems.SILVER_NUGGET.get(), 0.1f, 200, "silver_nugget");
+        //Silver Tools
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SILVER_AXE.get())
                 .define('I', ModItems.SILVER_INGOT.get()).define('S', Items.STICK)
                 .pattern("II").pattern("IS").pattern(" S")
@@ -55,6 +82,27 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("III").pattern(" S ").pattern(" S ")
                 .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
                 .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "silver_shovel"));
+        //Silver Armor
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SILVER_HELMET.get())
+                .define('#', ModItems.SILVER_INGOT.get())
+                .pattern("###").pattern("# #")
+                .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "silver_helmet"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SILVER_CHESTPLATE.get())
+                .define('#', ModItems.SILVER_INGOT.get())
+                .pattern("# #").pattern("###").pattern("###")
+                .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "silver_chestplate"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SILVER_LEGGINGS.get())
+                .define('#', ModItems.SILVER_INGOT.get())
+                .pattern("###").pattern("# #").pattern("# #")
+                .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "silver_leggings"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SILVER_BOOTS.get())
+                .define('#', ModItems.SILVER_INGOT.get())
+                .pattern("# #").pattern("# #")
+                .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "silver_boots"));
     }
 
     //Copies from RecipeProvider to generate data in generated/mmvampirism not minecraft folder

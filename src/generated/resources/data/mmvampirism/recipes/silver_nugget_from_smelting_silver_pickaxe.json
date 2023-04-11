@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "silver_nugget",
+  "ingredient": {
+    "item": "mmvampirism:silver_pickaxe"
+  },
+  "result": "mmvampirism:silver_nugget"
+}

@@ -1,11 +1,11 @@
 {
-  "type": "minecraft:blasting",
+  "type": "minecraft:smelting",
   "category": "misc",
-  "cookingtime": 100,
+  "cookingtime": 200,
   "experience": 0.9,
   "group": "silver_ingot",
   "ingredient": {
-    "item": "mmvampirism:raw_silver"
+    "item": "mmvampirism:silver_ore"
   },
   "result": "mmvampirism:silver_ingot"
 }
