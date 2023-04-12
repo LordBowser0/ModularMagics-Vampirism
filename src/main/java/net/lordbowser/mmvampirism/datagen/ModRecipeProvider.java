@@ -39,6 +39,8 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModItems.SILVER_INGOT.get(), 0.9f, 200, "silver_ingot");
         nineBlockStorageRecipes(consumer, RecipeCategory.MISC, ModItems.SILVER_INGOT.get(),
                 RecipeCategory.MISC, ModBlocks.SILVER_BLOCK.get());
+        nineBlockStorageRecipes(consumer, RecipeCategory.MISC, ModItems.RAW_SILVER.get(),
+                RecipeCategory.MISC, ModBlocks.RAW_SILVER_BLOCK.get());
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_NUGGET.get(), 9)
                 .requires(ModItems.SILVER_INGOT.get()).group("silver_nugget")
                 .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
@@ -103,6 +105,55 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("# #").pattern("# #")
                 .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
                 .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "silver_boots"));
+        //Other Tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.HAND_MIRROR.get())
+                .define('S', ModItems.SILVER_INGOT.get()).define('G', Items.GLASS_PANE)
+                .define('N', ModItems.SILVER_NUGGET.get())
+                .pattern(" S ").pattern("SGS").pattern(" N ")
+                .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "hand_mirror"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.WOODEN_STAKE.get())
+                .define('S', Items.WOODEN_SWORD).define('L', Items.STRIPPED_OAK_LOG)
+                .define('P', Items.OAK_PLANKS)
+                .pattern("SP ").pattern("PLP").pattern(" PL")
+                .unlockedBy(getHasName(Items.WOODEN_SWORD), has(Items.WOODEN_SWORD))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "wooden_stake_from_oak"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.WOODEN_STAKE.get())
+                .define('S', Items.WOODEN_SWORD).define('L', Items.STRIPPED_ACACIA_LOG)
+                .define('P', Items.ACACIA_PLANKS)
+                .pattern("SP ").pattern("PLP").pattern(" PL")
+                .unlockedBy(getHasName(Items.WOODEN_SWORD), has(Items.WOODEN_SWORD))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "wooden_stake_from_acacia"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.WOODEN_STAKE.get())
+                .define('S', Items.WOODEN_SWORD).define('L', Items.STRIPPED_BIRCH_LOG)
+                .define('P', Items.BIRCH_PLANKS)
+                .pattern("SP ").pattern("PLP").pattern(" PL")
+                .unlockedBy(getHasName(Items.WOODEN_SWORD), has(Items.WOODEN_SWORD))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "wooden_stake_from_birch"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.WOODEN_STAKE.get())
+                .define('S', Items.WOODEN_SWORD).define('L', Items.STRIPPED_JUNGLE_LOG)
+                .define('P', Items.JUNGLE_PLANKS)
+                .pattern("SP ").pattern("PLP").pattern(" PL")
+                .unlockedBy(getHasName(Items.WOODEN_SWORD), has(Items.WOODEN_SWORD))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "wooden_stake_from_jungle"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.WOODEN_STAKE.get())
+                .define('S', Items.WOODEN_SWORD).define('L', Items.STRIPPED_MANGROVE_LOG)
+                .define('P', Items.MANGROVE_PLANKS)
+                .pattern("SP ").pattern("PLP").pattern(" PL")
+                .unlockedBy(getHasName(Items.WOODEN_SWORD), has(Items.WOODEN_SWORD))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "wooden_stake_from_mangrove"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.WOODEN_STAKE.get())
+                .define('S', Items.WOODEN_SWORD).define('L', Items.STRIPPED_DARK_OAK_LOG)
+                .define('P', Items.DARK_OAK_PLANKS)
+                .pattern("SP ").pattern("PLP").pattern(" PL")
+                .unlockedBy(getHasName(Items.WOODEN_SWORD), has(Items.WOODEN_SWORD))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "wooden_stake_from_dark_oak"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.WOODEN_STAKE.get())
+                .define('S', Items.WOODEN_SWORD).define('L', Items.STRIPPED_SPRUCE_LOG)
+                .define('P', Items.SPRUCE_PLANKS)
+                .pattern("SP ").pattern("PLP").pattern(" PL")
+                .unlockedBy(getHasName(Items.WOODEN_SWORD), has(Items.WOODEN_SWORD))
+                .save(consumer, new ResourceLocation(ModularMagicsVampirism.MOD_ID, "wooden_stake_from_spruce"));
     }
 
     //Copies from RecipeProvider to generate data in generated/mmvampirism not minecraft folder
